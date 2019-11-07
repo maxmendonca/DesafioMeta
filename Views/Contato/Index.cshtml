@@ -1,4 +1,4 @@
-﻿@model  IEnumerable<MinhaWebApi.Models.Contato>
+﻿@model IEnumerable<MinhaWebApi.Models.Contato>
 
 @{
     ViewData["Title"] = "Contatos Meta";
@@ -6,8 +6,9 @@
 
 <h1>@ViewData["Title"]</h1>
 
+
 <p>
-    <a asp-action="Create" class="btn btn-primary">Incluir</a>
+    <a asp-action="Create" class="btn btn-primary btn-lg">Incluir</a>
 </p>
 
 <table class="table table-striped table-hover">
@@ -15,9 +16,6 @@
         <tr class="success">
             <th>
                 @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TipoContato)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CanalContato)
@@ -31,25 +29,22 @@
     <tbody>
         @foreach (var item in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoContato.Descricao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CanalContato)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ObservacaoContato)
-            </td>
-            <td>
-                <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Editar</a>
-                <a asp-action="Details" class="btn btn-success" asp-route-id="@item.Id">Detalhar</a>
-                <a asp-action="Delete" class="btn btn-danger"  asp-route-id="@item.Id">Excluir</a>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CanalContato)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ObservacaoContato)
+                </td>
+                <td>
+                    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Details" class="btn btn-success" asp-route-id="@item.Id">Detalhar</a>
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Excluir</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>

@@ -13,12 +13,12 @@ namespace MinhaWebApi.Models
 
         [Required(ErrorMessage = "O campo <b><i>{0}</i></b> é obrigatório")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "O tamanho do campo <b><i>{0}</i></b> deve estar entre {2} e {1}")]
-        [Display(Name = "Canal Contato")]
+        [Display(Name = "Canal")]
         public string CanalContato { get; set; }
 
         [Required(ErrorMessage = "O campo <b><i>{0}</i></b> é obrigatório")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "O tamanho do campo <b><i>{0}</i></b> deve estar entre {2} e {1}")]
-        [Display(Name = "Observação Contato")]
+        [Display(Name = "Observação")]
         public string ObservacaoContato { get; set; }
 
         [Display(Name = "Tipo Canal")]

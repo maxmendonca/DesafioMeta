@@ -13017,11 +13017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAXWELL\\Documents\\Desafio\\MinhaWebApi\\MinhaWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\MAXWELL\\Documents\\Desafio\\DesafioMeta\\MinhaWebApi.csproj",
       "projectName": "MinhaWebApi",
-      "projectPath": "C:\\Users\\MAXWELL\\Documents\\Desafio\\MinhaWebApi\\MinhaWebApi.csproj",
+      "projectPath": "C:\\Users\\MAXWELL\\Documents\\Desafio\\DesafioMeta\\MinhaWebApi.csproj",
       "packagesPath": "C:\\Users\\MAXWELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAXWELL\\Documents\\Desafio\\MinhaWebApi\\obj\\",
+      "outputPath": "C:\\Users\\MAXWELL\\Documents\\Desafio\\DesafioMeta\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
