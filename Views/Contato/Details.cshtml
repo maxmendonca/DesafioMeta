@@ -1,0 +1,42 @@
+﻿@model MinhaWebApi.Models.Contato
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<hr />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoContato.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CanalContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CanalContato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObservacaoContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObservacaoContato)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-warning">Voltar</a> |
+    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model.Id">Editar</a>
+</div>

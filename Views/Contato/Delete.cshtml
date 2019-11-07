@@ -1,0 +1,49 @@
+﻿@model  MinhaWebApi.Models.Contato
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h5>Deseja realmente excluir o contato selecionado?</h5>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoContato.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CanalContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CanalContato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObservacaoContato)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObservacaoContato)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <a asp-action="Index" class="btn btn-warning">Voltar</a> |
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+    </form>
+
+</div>
+
